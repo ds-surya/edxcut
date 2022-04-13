@@ -1097,7 +1097,7 @@ class edXapi(object):
         List chapters in an edX course (via Studio)
         '''
         outline = self.get_outline()
-	return self.list_xblocks(outline, 'course') # top-level is course
+        return self.list_xblocks(outline, 'course') # top-level is course
 
     def create_chapter(self, name):
         '''

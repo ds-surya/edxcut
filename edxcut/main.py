@@ -5,7 +5,7 @@ Also can be used to create unit tests, from an xbundle file.
 
 import sys
 import argparse
-from .course_unit_tester import CourseUnitTester
+from course_unit_tester import CourseUnitTester
 from collections import defaultdict
 
 #-----------------------------------------------------------------------------

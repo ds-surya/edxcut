@@ -5,7 +5,7 @@ Also can be used to create unit tests, from an xbundle file.
 
 import sys
 import argparse
-from course_unit_tester import CourseUnitTester
+import course_unit_tester
 from collections import defaultdict
 
 #-----------------------------------------------------------------------------
@@ -60,7 +60,7 @@ Examples:
         for fn in args.ifn:
             print("="*70)
             print("==>  Running tests from %s " % fn)
-            cut = CourseUnitTester(site_base_url=args.site_base_url,
+            cut = course_unit_tester.CourseUnitTester(site_base_url=args.site_base_url,
                                    username=args.username,
                                    password=args.password,
                                    verbose=args.verbose,

@@ -10,14 +10,14 @@ import pytest
 from lxml import etree
 from io import StringIO
 
-import course_tests
+from edxcut import course_tests
 import importlib
 importlib.reload(course_tests)
 
 AnswerBoxUnitTest = course_tests.AnswerBoxUnitTest
 CourseUnitTestSet = course_tests.CourseUnitTestSet
 
-import edxapi
+from edxcut import edxapi
 importlib.reload(edxapi)
 
 edXapi = edxapi.edXapi
